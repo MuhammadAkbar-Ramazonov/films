@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Films</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1 class="bg-success text-white text-center rounded-3">Films</h1>
+    <ul class="row film-list list-unstyled">
+      
+    </ul>
+  </div>
+  
+  <template class="film-temp">
+    <!-- fragment -->
+    <li class="js-item mb-3 col-12 col-sm-6 col-md-4 col-lg-3 text d-flex align-items-stretch">
+      <div class="d-flex flex-column justify-content-between w-100 p-3 bg-success rounded-3 ">
+        <h2 class="film-title text-center text-white mb-3"></h2>
+        <div class="text-white">Year:   <span class="film-year text-dark mb-3 text-decoration-underline"></span></div>
+        <div class="text-white">Cast:   <p class="film-cast text-dark"></p></div>
+        <div class="text-white">Genres: <span class="film-genres text-dark"></span></div>
+      </div>
+    </li>
+    <!-- fragment -->
+  </template>
+  
+  <script src="./kinolar.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
