@@ -3,6 +3,8 @@ const elFilmList = document.querySelector(".film-list");
 const elFilmTemplate = document.querySelector(".film-temp").content;
 const FilmFragment = document.createDocumentFragment();
 
+AOS.init();
+
 // For Loop
 for (const  kino of kinolar) {
   const elFilmTemplate = document.querySelector(".film-temp").content.cloneNode(true);
